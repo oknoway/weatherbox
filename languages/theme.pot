@@ -1,0 +1,347 @@
+# Copyright (C) 2015 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: weatherbox 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/oknoway/weatherbox.git/issues\n"
+"POT-Creation-Date: 2015-06-12 21:51:31+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Nate <nate@oknoway.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: 404.php:15
+#@ weatherbox
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:19
+#@ weatherbox
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr ""
+
+#: 404.php:27
+#@ weatherbox
+msgid "Most Used Categories"
+msgstr ""
+
+#. translators: %1$s: smiley
+#: 404.php:44
+#, php-format
+#@ weatherbox
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: comments.php:29
+#, php-format
+#@ weatherbox
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:38
+#: comments.php:59
+#@ weatherbox
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:41
+#: comments.php:62
+#@ weatherbox
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:42
+#: comments.php:63
+#@ weatherbox
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:75
+#@ weatherbox
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:16
+#@ weatherbox
+msgid "http://wordpress.org/"
+msgstr ""
+
+#: footer.php:16
+#, php-format
+#@ weatherbox
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: footer.php:18
+#, php-format
+#@ weatherbox
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: functions.php:45
+#: header.php:32
+#@ weatherbox
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:100
+#@ weatherbox
+msgid "Sidebar"
+msgstr ""
+
+#: header.php:23
+#@ weatherbox
+msgid "Skip to content"
+msgstr ""
+
+#: inc/extras.php:52
+#, php-format
+#@ weatherbox
+msgid "Page %s"
+msgstr ""
+
+#: inc/template-tags.php:23
+#@ weatherbox
+msgid "Posts navigation"
+msgstr ""
+
+#: inc/template-tags.php:27
+#@ weatherbox
+msgid "Older posts"
+msgstr ""
+
+#: inc/template-tags.php:31
+#@ weatherbox
+msgid "Newer posts"
+msgstr ""
+
+#: inc/template-tags.php:56
+#@ weatherbox
+msgid "Post navigation"
+msgstr ""
+
+#: inc/template-tags.php:86
+#, php-format
+#@ weatherbox
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: inc/template-tags.php:91
+#, php-format
+#@ weatherbox
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:108
+#: inc/template-tags.php:114
+#@ weatherbox
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:110
+#, php-format
+#@ weatherbox
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:116
+#, php-format
+#@ weatherbox
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/template-tags.php:122
+#@ weatherbox
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/template-tags.php:122
+#@ weatherbox
+msgid "1 Comment"
+msgstr ""
+
+#: inc/template-tags.php:122
+#@ weatherbox
+msgid "% Comments"
+msgstr ""
+
+#: inc/template-tags.php:126
+#: partials/content-page.php:26
+#@ weatherbox
+msgid "Edit"
+msgstr ""
+
+#: inc/template-tags.php:143
+#, php-format
+#@ weatherbox
+msgid "Category: %s"
+msgstr ""
+
+#: inc/template-tags.php:145
+#, php-format
+#@ weatherbox
+msgid "Tag: %s"
+msgstr ""
+
+#: inc/template-tags.php:147
+#, php-format
+#@ weatherbox
+msgid "Author: %s"
+msgstr ""
+
+#: inc/template-tags.php:149
+#, php-format
+#@ weatherbox
+msgid "Year: %s"
+msgstr ""
+
+#: inc/template-tags.php:149
+#@ weatherbox
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: inc/template-tags.php:151
+#, php-format
+#@ weatherbox
+msgid "Month: %s"
+msgstr ""
+
+#: inc/template-tags.php:151
+#@ weatherbox
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: inc/template-tags.php:153
+#, php-format
+#@ weatherbox
+msgid "Day: %s"
+msgstr ""
+
+#: inc/template-tags.php:153
+#@ weatherbox
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr ""
+
+#: inc/template-tags.php:156
+#@ weatherbox
+msgctxt "post format archive title"
+msgid "Asides"
+msgstr ""
+
+#: inc/template-tags.php:158
+#@ weatherbox
+msgctxt "post format archive title"
+msgid "Galleries"
+msgstr ""
+
+#: inc/template-tags.php:160
+#@ weatherbox
+msgctxt "post format archive title"
+msgid "Images"
+msgstr ""
+
+#: inc/template-tags.php:162
+#@ weatherbox
+msgctxt "post format archive title"
+msgid "Videos"
+msgstr ""
+
+#: inc/template-tags.php:164
+#@ weatherbox
+msgctxt "post format archive title"
+msgid "Quotes"
+msgstr ""
+
+#: inc/template-tags.php:166
+#@ weatherbox
+msgctxt "post format archive title"
+msgid "Links"
+msgstr ""
+
+#: inc/template-tags.php:168
+#@ weatherbox
+msgctxt "post format archive title"
+msgid "Statuses"
+msgstr ""
+
+#: inc/template-tags.php:170
+#@ weatherbox
+msgctxt "post format archive title"
+msgid "Audio"
+msgstr ""
+
+#: inc/template-tags.php:172
+#@ weatherbox
+msgctxt "post format archive title"
+msgid "Chats"
+msgstr ""
+
+#: inc/template-tags.php:175
+#, php-format
+#@ weatherbox
+msgid "Archives: %s"
+msgstr ""
+
+#. translators: 1: Taxonomy singular name, 2: Current taxonomy term
+#: inc/template-tags.php:179
+#, php-format
+#@ weatherbox
+msgid "%1$s: %2$s"
+msgstr ""
+
+#: inc/template-tags.php:181
+#@ weatherbox
+msgid "Archives"
+msgstr ""
+
+#: search.php:16
+#, php-format
+#@ weatherbox
+msgid "Search Results for: %s"
+msgstr ""
+
+#: partials/content-none.php:14
+#@ weatherbox
+msgid "Nothing Found"
+msgstr ""
+
+#: partials/content-none.php:20
+#, php-format
+#@ weatherbox
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: partials/content-none.php:24
+#@ weatherbox
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: partials/content-none.php:29
+#@ weatherbox
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: partials/content-page.php:19
+#: partials/content-single.php:23
+#: partials/content.php:32
+#@ weatherbox
+msgid "Pages:"
+msgstr ""
+
+#. translators: %s: Name of current post
+#: partials/content.php:25
+#, php-format
+#@ weatherbox
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""

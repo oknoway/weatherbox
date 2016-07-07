@@ -1,0 +1,108 @@
+/**
+ * Navigation
+ */
+
+.main-navigation {
+  display: block;
+  width: 100%;
+  float: left;
+  clear: both;
+  
+
+  ul {
+    display: none;
+    margin: 0;
+    padding-left: 0;
+
+    list-style: none;
+
+    ul {
+      position: absolute;
+      top: 1.5em;
+      left: -999em;
+      z-index: 99999;
+      
+      float: left;
+      
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+
+      ul {
+        top: 0;
+        left: -999em;
+      }
+
+      li {
+        &:hover > ul,
+        &.focus > ul { left: 100%; }
+      }
+
+      a { width: 200px; }
+
+      :hover > a,
+      .focus > a { }
+
+      a:hover,
+      a.focus { }
+    }
+
+    li:hover > ul,
+    li.focus > ul { left: auto; }
+  }
+  
+  li {
+    position: relative;
+    float: left;
+
+    &:hover > a,
+    &.focus > a { }
+  }
+  
+  a {
+    display: block;
+    text-decoration: none;
+  }
+
+  .current_page_item > a,
+  .current-menu-item > a,
+  .current_page_ancestor > a { }
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block;
+}
+
+.menu-toggle {
+  display: none;
+  
+  @include media( $third-break ) { display: none; }
+}
+
+.main-navigation ul {
+  display: none;
+  
+  @include media( $third-break ) { display: block; }
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+  .site-main & {
+    margin: 0 0 1.5em;
+    overflow: hidden;
+  }
+
+  & .nav-previous {
+    width: 50%;
+    float: left;
+  }
+
+  & .nav-next {
+    width: 50%;
+    float: right;
+    
+    text-align: right;
+  }
+}

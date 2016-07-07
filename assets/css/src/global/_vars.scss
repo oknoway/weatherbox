@@ -1,0 +1,45 @@
+/**
+ * Vars
+ */
+
+/* colors */
+$colors: (
+  background-body: #fff,
+  background-screen: #f1f1f1,
+  background-hr: #ccc,
+  background-button: #e6e6e6,
+  background-pre: #eee,
+  background-ins: #fff9c0,
+
+  text-screen: #21759b,
+  text-input: #666,
+  text-input-focus: #111,
+  link: royalblue,
+  link-visited: purple,
+  link-hover: midnightblue,
+  text-main: #404040,
+
+  border-button: #ccc #ccc #bbb,
+  border-button-hover: #ccc #bbb #aaa,
+  border-button-focus: #aaa #bbb #bbb,
+  border-input: #ccc,
+  border-abbr: #666,
+
+  red: rgb( 237, 28, 36 ),
+  blue: rgb( 0, 174, 239 )
+);
+
+/* frameworks */
+$em-base: 18px;
+$base-font-size: $em-base;
+$base-line-height: 30px;
+
+
+/* font stacks */
+$moriston: 'Moriston','HelveticaNeue',sans-serif;
+
+
+/* paths */
+$img: '../img';
+$svg: '../svg';
+$fonts: '../fonts';

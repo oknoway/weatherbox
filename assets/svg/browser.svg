@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="40px" viewBox="20 11 568 40" version="1.1" preserveAspectRatio="XMinYMin meet">
+    <defs>
+        <circle id="path-1" cx="10" cy="10" r="10"/>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="20" height="20" fill="white">
+            <use xlink:href="#path-1"/>
+        </mask>
+        <circle id="path-3" cx="40" cy="10" r="10"/>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="20" height="20" fill="white">
+            <use xlink:href="#path-3"/>
+        </mask>
+        <circle id="path-5" cx="70" cy="11" r="10"/>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="20" height="20" fill="white">
+            <use xlink:href="#path-5"/>
+        </mask>
+        <rect id="path-7" x="118" y="11" width="470" height="40" rx="5"/>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="470" height="40" fill="white">
+            <use xlink:href="#path-7"/>
+        </mask>
+    </defs>
+    <g id="Buttons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(20.000000, 21.000000)">
+        <use id="Close" stroke="#979797" mask="url(#mask-2)" stroke-width="6" fill="#FFFFFF" xlink:href="#path-1"/>
+        <use id="Minimise" stroke="#979797" mask="url(#mask-4)" stroke-width="6" fill="#FFFFFF" xlink:href="#path-3"/>
+        <use id="Resize" stroke="#979797" mask="url(#mask-6)" stroke-width="6" fill="#FFFFFF" xlink:href="#path-5"/>
+    </g>
+    <use id="Address-Bar" stroke="#979797" mask="url(#mask-8)" stroke-width="6" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-7"/>
+    <path d="M554.435029,31.0199419 L558.238122,34.8161508 L562.001992,31.0199419 L560.068746,31.0199419 C560.063698,28.0479909 562.456699,25.6174031 565.424504,25.6001297 C568.399882,25.5827103 570.825941,27.9862445 570.843222,30.9685596 C570.871378,35.7838997 565.063777,38.1947325 561.673741,34.8458805 L559.152925,37.4094978 C564.791448,42.9799536 574.481656,38.9867305 574.43486,30.9475882 C574.405831,25.9770307 570.362399,21.9711566 565.403533,22.0001565 C560.45224,22.0291077 556.460507,26.0597971 556.477255,31.0199419 L554.435029,31.0199419 Z" id="refresh" stroke="none" fill="#979797" fill-rule="evenodd" transform="translate(564.435029, 31.000000) scale(-1, 1) rotate(-315.000000) translate(-564.435029, -31.000000) "/>
+</svg>

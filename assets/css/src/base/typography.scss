@@ -1,0 +1,43 @@
+/**
+ * Typography
+ */
+
+html { font-size: 100%; }
+
+body,
+button,
+input,
+select,
+textarea {
+  color: copy( text-main );
+
+
+  font-family: $moriston;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: normal;
+}
+
+%h1 {
+  font-size: 1.66em;
+  font-weight: 700;
+}
+
+%h2 {
+  font-size: 1.33em;
+  font-weight: 500;
+}
+
+h1 {
+  @extend %h1;
+}
+
+h2 {
+  @extend %h2;
+}
