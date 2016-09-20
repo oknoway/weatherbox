@@ -208,7 +208,7 @@ function calculate_responsive_bg_img_styles( $size_array, $image_src, $image_met
 
     // holder for largest img value
     $biggestImg = 0;
-    pre_printr( $image_sizes );
+    //pre_printr( $image_sizes );
     /*
      * Loop through available images. Only use images that are resized
      * versions of the same edit.
@@ -239,7 +239,7 @@ function calculate_responsive_bg_img_styles( $size_array, $image_src, $image_met
           'descriptor' => 'min-width',
           'value'      => $image['width'],
         );
-        pre_printr( $image );
+        //pre_printr( $image );
         // Replace the biggestImg value if this one is bigger
         if ( $image['width'] > $biggestImg )
           $biggestImg = $image['width'];
