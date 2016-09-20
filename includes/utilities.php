@@ -165,7 +165,7 @@ function calculate_responsive_bg_img_styles( $size_array, $image_src, $image_met
       }
     }
 
-    //$image_baseurl = trailingslashit( $image_baseurl );
+    $image_baseurl = trailingslashit( $image_baseurl );
 
     /*
      * WordPress flattens animated GIFs into one frame when generating intermediate sizes.
