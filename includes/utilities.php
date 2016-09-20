@@ -149,7 +149,23 @@ function calculate_responsive_bg_img_styles( $size_array, $image_src, $image_met
     }
 
     $image_basename = wp_basename( $image_meta['file'] );
-    $image_baseurl = _wp_upload_dir_baseurl();
+    $upload_dir = wp_get_upload_dir();
+    $image_baseurl = $upload_dir['baseurl'];
+
+    //pre_printr($image_basename);
+    //pre_printr($image_baseurl);
+    //pre_printr($upload_dir);
+
+    // Uploads are (or have been) in year/month sub-directories.
+    if ( $image_basename !== $image_meta['file'] ) {
+      $dirname = dirname( $image_meta['file'] );
+
+      if ( $dirname !== '.' ) {
+        $image_baseurl = trailingslashit( $image_baseurl ) . $dirname;
+      }
+    }
+
+    //$image_baseurl = trailingslashit( $image_baseurl );
 
     /*
      * WordPress flattens animated GIFs into one frame when generating intermediate sizes.
@@ -166,16 +182,6 @@ function calculate_responsive_bg_img_styles( $size_array, $image_src, $image_met
       return false;
     }
 
-    // Uploads are (or have been) in year/month sub-directories.
-    if ( $image_basename !== $image_meta['file'] ) {
-      $dirname = dirname( $image_meta['file'] );
-
-      if ( $dirname !== '.' ) {
-        $image_baseurl = trailingslashit( $image_baseurl ) . $dirname;
-      }
-    }
-
-    $image_baseurl = trailingslashit( $image_baseurl );
 
     // Calculate the image aspect ratio.
     $image_ratio = $image_height / $image_width;
@@ -202,13 +208,12 @@ function calculate_responsive_bg_img_styles( $size_array, $image_src, $image_met
 
     // holder for largest img value
     $biggestImg = 0;
-
+    pre_printr( $image_sizes );
     /*
      * Loop through available images. Only use images that are resized
      * versions of the same edit.
      */
     foreach ( $image_sizes as $image ) {
-
       // Filter out images that are from previous edits.
       if ( $image_edited && ! strpos( $image['file'], $image_edit_hash[0] ) ) {
         continue;
@@ -234,7 +239,7 @@ function calculate_responsive_bg_img_styles( $size_array, $image_src, $image_met
           'descriptor' => 'min-width',
           'value'      => $image['width'],
         );
-
+        pre_printr( $image );
         // Replace the biggestImg value if this one is bigger
         if ( $image['width'] > $biggestImg )
           $biggestImg = $image['width'];

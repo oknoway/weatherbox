@@ -109,6 +109,10 @@ function weatherbox_setup() {
   add_filter( 'tiny_mce_plugins', 'disable_emojis_tinymce' );
   remove_filter( 'the_content', 'prepend_attachment' );
 
+  // Disable update emails
+  add_filter( 'auto_core_update_send_email', '__return_false' );
+
+
   function remove_widget_action() {
     global $wp_widget_factory;
 
