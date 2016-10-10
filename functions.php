@@ -162,7 +162,7 @@ if ( ! function_exists( 'weatherbox_scripts_styles' ) ) :
       wp_enqueue_style( 'weatherbox-style', get_template_directory_uri() . "/assets/css/weatherbox.css", array(), VERSION, 'all' );
 
       wp_enqueue_script( 'weatherbox-head', get_template_directory_uri() . "/assets/js/head.js", array(), VERSION, false );
-      wp_enqueue_script( 'weatherbox', get_template_directory_uri() . "/assets/js/weatherbox.js", array(), VERSION, true );
+      wp_enqueue_script( 'weatherbox', get_template_directory_uri() . "/assets/js/weatherbox.js", array( 'jQuery' ), VERSION, true );
 
       $wpURLs = array(
         'template_directory_uri' => get_template_directory_uri(),
