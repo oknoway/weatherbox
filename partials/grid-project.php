@@ -5,10 +5,15 @@
  * @package weatherbox
  */
 
+ $project_details = get_post_meta( get_the_ID(), 'project_details', true );
 ?>
 
 <article id="project-<?php the_ID(); ?>" <?php post_class(); ?>>
+  <?php if ( !empty( $project_details['url' ] ) ) : ?>
+  <a href="<?php echo esc_url( $project_details['url' ] ); ?>" class="project-container">
+  <?php else : ?>
   <div class="project-container">
+  <?php endif; ?>
     <header class="project-header">
       <?php the_title( sprintf( '<h1 class="project-title">', '</h1>' ) ); ?>
     </header><!-- .project-header -->
@@ -38,5 +43,9 @@
         <?php the_project_meta(); ?>
       </div>
     </footer><!-- .project-footer -->
-  </div>
+    <?php if ( !empty( $project_details['url' ] ) ) : ?>
+    </a>
+    <?php else : ?>
+    </div>
+    <?php endif; ?>
 </article><!-- #project-## -->
