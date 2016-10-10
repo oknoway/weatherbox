@@ -3,5 +3,11 @@
  */
 
 .site-branding {
+  .thumbs {
+    display: none;
 
+    @include media( $tablet ) {
+      display: block;
+    }
+  }
 }

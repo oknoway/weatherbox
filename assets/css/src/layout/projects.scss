@@ -35,7 +35,7 @@
 
       border-radius: 4px;
 
-      cursor: pointer;
+      cursor: wait;
 
       &:after {
         content: '';
@@ -79,6 +79,10 @@
         }
       }
 
+    }
+
+    .project-container[href]:hover {
+      cursor: pointer;
     }
 
     .project-content,
